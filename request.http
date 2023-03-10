@@ -1,0 +1,9 @@
+### Signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "id": "kloof@dev.com",
+    "password": "12345666"
+}
+
