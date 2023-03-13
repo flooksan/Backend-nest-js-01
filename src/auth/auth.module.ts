@@ -2,10 +2,12 @@ import { Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { PrismaModule } from 'src/prisma/prisma.module';
+import { JwtModule } from '@nestjs/jwt';
+import { JwtStrategy } from './strategy';
 
 @Module({
-  imports: [PrismaModule], // import prismamodule for use prisma service
+  imports: [PrismaModule, JwtModule.register({})], // import prismamodule for use prisma service ถ้า imports global อาจจะไม่ต้อง import ตรงนี้
   controllers: [AuthController],
-  providers: [AuthService],
+  providers: [AuthService, JwtStrategy],
 })
 export class AuthModule {}
