@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "kloof_open1@dev.com",
+    "email": "kloof_open12@dev.com",
     "password": "12345678"
 }
 
@@ -12,13 +12,13 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "kloof_109@dev.com",
-    "password": "12345666"
+    "email": "kloof_open109@dev.com",
+    "password": "12345678"
 }
 
 ### User test auth guard
 GET http://localhost:3000/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJrbG9vZl8xMDlAZGV2LmNvbSIsImlhdCI6MTY3ODcwMjUyMCwiZXhwIjoxNjc4NzAzNDIwfQ.DnXi28YYcPym8nULCyNZfX41hb99XqfWh7hf_WnJ5YQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrbG9vZl9vcGVuMTA5QGRldi5jb20iLCJpYXQiOjE2Nzg3Njg4MDIsImV4cCI6MTY3ODc3MDAwMn0.t3fO9DcrgxFcbzfrISFMoBGLlMI_eB3BMNFfUJfXO6E
 
 ### Test 
 GET http://localhost:3000/auth/test
